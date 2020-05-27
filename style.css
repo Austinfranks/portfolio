@@ -71,11 +71,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .maintitle {
-  padding-top: 15vh;
-
   font-size: 32px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -150,7 +149,7 @@ header {
 .card {
   margin: 30px;
   padding: 30px;
-  background-color: red;
+  background-color: crimson;
   height: 500px;
   width: 350px;
 
@@ -165,6 +164,10 @@ header {
 }
 
 .projectimg {
+  height: 300px;
+  width: 300px;
+  padding-bottom: 3vh;
+  border-radius: 5px;
 }
 .projectitle {
   font-size: 24px;
