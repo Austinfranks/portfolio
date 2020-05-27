@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 10vh;
+  background-color: red;
+  box-shadow: 0 4px 2px -2px gray;
+  transition: 1s ease;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: white;
+  transition: 1s ease;
+}
+.logo {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + content {
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav a {
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+
+  .logo {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+  }
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maintitle {
+  padding-top: 15vh;
+
+  font-size: 32px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: 1s ease;
+  text-align: center;
+}
+
+.scndtitle {
+  font-size: 20px;
+  letter-spacing: 0.2em;
+
+  transition: 1s ease;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .maintitle {
+    font-size: 24px;
+  }
+
+  .scndtitle {
+    font-size: 16px;
+  }
+}
+
+/* ABOUT */
+
+.aboutme {
+  height: 50vh;
+  background-color: lightgrey;
+}
+
+.abouttitle {
+  padding-top: 15vh;
+  font-size: 32px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: 1s ease;
+  text-align: center;
+}
+
+.abouttext {
+  padding-top: 5vh;
+  font-size: 24px;
+  text-align: center;
+  transition: 1s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .abouttitle {
+    font-size: 24px;
+  }
+  .abouttext {
+    font-size: 16px;
+  }
+}
+
+/* ABOUT */
+
+/* PROJECT */
+
+.projects {
+  height: auto;
+  background-color: gray;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 10vh;
+}
+
+.card {
+  margin: 30px;
+  padding: 30px;
+  background-color: red;
+  height: 500px;
+  width: 350px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  transition: 1s ease;
+  color: white;
+}
+
+.projectimg {
+}
+.projectitle {
+  font-size: 24px;
+}
+.projecttext {
+  font-size: 16px;
+}
+
+/* PROJECT */
+
+/* CONTACT */
+.contact {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./images/background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacttitle {
+  font-size: 28px;
+  text-transform: uppercase;
+  transition: 1s ease;
+  text-align: center;
+}
+
+.icon {
+  font-size: 28px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .contacttitle {
+    font-size: 24px;
+  }
+}
+
+/* CONTACT */
