@@ -30,6 +30,16 @@ nav a {
   color: white;
   transition: 1s ease;
 }
+
+nav a:hover {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: black;
+  transition: 0.5s ease;
+}
+
 .logo {
   height: 36px;
   width: 36px;
